@@ -1,0 +1,19 @@
+.product-item:hover {
+    opacity: 1;
+}
+
+.product-item {
+    transition: opacity 0.3s ease;
+}
+
+.product-item:hover ~ .product-item {
+    opacity: 0.5;
+}
+
+.row:hover .product-item {
+    opacity: 0.5;
+}
+
+.row:hover .product-item:hover {
+    opacity: 1;
+}

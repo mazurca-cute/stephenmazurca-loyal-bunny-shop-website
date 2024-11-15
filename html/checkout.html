@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>checkout</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="stylesheet" href="/css/checkout.css">
+    </head> 
+    <body style="background-color: rgb(241, 241, 241);">
+        <div class="container-fluid" style="background-image: url('/images/background/rabbit_bg1.jpg');background-size: cover;">
+            <nav class="navbar navbar-expand-lg pt-1 text-light" style="background: transparent;">
+                <div class="container-fluid">
+                    <!-- Logo aligned to the left -->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="/images/logo/logo.png" width="100px" height="70px" alt="Logo"> 
+                        <span class="ms-2" style="color: rgb(237, 213, 35);"> <b>SM Bunny Shop</b></span>
+                    </a>
+            
+                    <!-- Toggle button for mobile view -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <!-- Centered links and right-aligned profile -->
+                    <div class="collapse navbar-collapse" id="navbarNav"> 
+                        <!-- Centered links -->
+                        <ul class="navbar-nav mx-auto text-light">
+                            <li class="nav-item">
+                                <a class="nav-link text-light slide-up" href="index.html"><b>Home</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light slide-up" href="shop.html"><b>Shop</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light slide-up" href="services.html"><b>Services</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light slide-up" href="about.html"><b>About Us</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light slide-up" href="contact.html"><b>Contact</b></a>
+                            </li>
+                        </ul>
+            
+                        <!-- Profile aligned to the right -->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item-img dropdown">
+                                <a class="slide-up nav-link dropdown-toggle p-0" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img style="border-radius: 40px;" width="50px" height="50px" src="/images/background/profile.jpg" alt="Profile Picture">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown" style="background-color: rgb(205, 201, 196);">
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>  
+            <div class="row">
+                <div style="margin-top: 200px; margin-bottom: 5px;">
+                    <h1 class="ml-3 text-light slide-up">
+                        <b>Home -> checkout</b>
+                    </h1>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-8 animate-up">
+                    <h4>Billing Details</h4>
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                    </form>
+                    <h4>Payments Methods</h4>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="card p-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-credit-card me-2"></i>
+                                    <span>Credit or Debit Card</span>
+                                    <input type="radio" name="paymentMethod" class="ms-auto form-check-input" checked>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fab fa-paypal me-2"></i>
+                                    <span>Paypal</span>
+                                    <input type="radio" name="paymentMethod" class="ms-auto form-check-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-2 mt-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-university me-2"></i>
+                                    <span>Direct Bank Transfer</span>
+                                    <input type="radio" name="paymentMethod" class="ms-auto form-check-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-2 mt-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-money-bill-alt me-2"></i>
+                                    <span>Cash on Delivery</span>
+                                    <input type="radio" name="paymentMethod" class="ms-auto form-check-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Payments Details</h4>
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter Name Card" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" class="form-control" placeholder="Select Date" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="CVV Code" required>
+                            </div>
+                        </div>
+                        <p><i class="fas fa-lock me-2"></i>Your Transaction is Secured with SSL Encryption</p>
+                    </form>
+                </div>
+                <div class="col-lg-4 order-summary animate-up">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Order Summary</h5>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <img src="/images/angora-rabbit/10.jpg" alt="">
+                                <div class="d-flex justify-content-between w-100">
+                                    <span>Angora rabbit</span>
+                                    <span>P1000</span>
+                                </div>
+                            </div>
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734; (10 Reviews)</span>
+                            <hr>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter Coupon Code">
+                                <button class="btn btn-dark">Apply Coupon</button>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Subtotal</span>
+                                <span>$230.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Coupon Discount</span>
+                                <span>-$10</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <strong>TOTAL</strong>
+                                <strong>$230.00</strong>
+                            </div>
+                            <p class="mt-3 small">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="#">privacy policy</a>.</p>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" required>
+                                <label class="form-check-label">I have read and agree to the website terms and conditions</label>
+                            </div>
+                            <a href="home_page.html"><button class="btn btn-success w-100">Proceed to Checkout</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+    <!--  Footer -->
+    <footer class="footer mt-5">
+        <div style="margin-left: 100px; margin-right: 100px;">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4">
+                    <div class="logo slide-up">
+                        <img src="/images/logo/logo.png" alt="Logo" width="100" height="100" ><span class="text-light">tepen website</span>
+                    </div>
+                    <p class="slide-up text-light">bunny ecommerce website</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="slide-up text-light">Navigation</h6>
+                    <ul class="list-unstyled slide-up">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">shop</a></li>
+                        <li><a href="#" class="text-white">about</a></li>
+                        <li><a href="#" class="text-white">services</a></li>
+                        <li><a href="#" class="text-white">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-light">Bunny breeds</h6>
+                    <ul class="list-unstyled slide-up">
+                        <li><a href="#" class="text-white">american-fuzzy</a></li>
+                        <li><a href="#" class="text-white">angora-rabbit</a></li>
+                        <li><a href="#" class="text-white">holand-lop</a></li>
+                        <li><a href="#" class="text-white">Lion-head</a></li>
+                        <li><a href="#" class="text-white">mini-lop</a></li>
+                        <li><a href="#" class="text-white">polish-rabbit</a></li>
+                        <li><a href="#" class="text-white">rex-rabbit</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-light">Services</h6>
+                    <ul class="list-unstyled slide-up">
+                        <li><a href="#" class="text-white">Grooming</a></li>
+                        <li><a href="#" class="text-white">Checkups</a></li>
+                        <li><a href="#" class="text-white">Training</a></li>
+                        <li><a href="#" class="text-white">Planning</a></li>
+                        <li><a href="#" class="text-white">Boarding</a></li>
+                        <li><a href="#" class="text-white">Accessories</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="text-center text-light">&copy; 2022 SM Bunny Shop • All Rights Reserved</p>
+        </div>
+    </footer>    
+    <!-- End Footer --> 
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/checkout.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/slideup.js"></script>
+</body>
+</html>

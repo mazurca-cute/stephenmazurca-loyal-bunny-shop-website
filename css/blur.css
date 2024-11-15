@@ -1,0 +1,20 @@
+
+.image-box:hover {
+    opacity: 1;
+}
+
+.image-box {
+    transition: opacity 0.3s ease;
+}
+
+.image-box:hover ~ .image-box {
+    opacity: 0.5;
+}
+
+.row:hover .image-box {
+    opacity: 0.5;
+}
+
+.row:hover .image-box:hover {
+    opacity: 1;
+}

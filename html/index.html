@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/categoy.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/slideup.css">
+    <link rel="stylesheet" href="/css/home-product.css">
+    <link rel="stylesheet" href="/css/blur.css">
+    <style>
+        .header-section {
+            background-color: #F04E23;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .about-section {
+            background-color: #e9e4de;
+        }
+        .pet-image {
+            max-width: 100%;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+        filter: brightness(100%); 
+        opacity: 1;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+        background: none; 
+        outline: none; 
+        border: none; 
+        }
+    </style>
+</head>
+<body> 
+    <!-- Navbar --> 
+    <div class="container-fluid" style="background-image: url('/images/background/rabbit_bg1.jpg'); background-size: 100% 110%;">
+    <nav class="navbar navbar-expand-lg pt-1 text-light" style="background: transparent;">
+        <div class="container-fluid">
+            <!-- Logo aligned to the left -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="/images/logo/logo.png" width="100px" height="70px" alt="Logo"> 
+                <span class="ms-2" style="color: rgb(237, 213, 35);"> <b>SM Bunny Shop</b></span>
+            </a>
+    
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Centered links and right-aligned profile -->
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+                <!-- Centered links -->
+                <ul class="navbar-nav mx-auto text-light">
+                  <li class="nav-item">
+                      <a class="nav-link text-light slide-up" href="index.html"><b>Home</b></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light slide-up" href="shop.html"><b>Shop</b></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light slide-up" href="services.html"><b>Services</b></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light slide-up" href="about.html"><b>About Us</b></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light slide-up" href="contact.html"><b>Contact</b></a>
+                  </li>
+              </ul>
+    
+                <!-- Profile aligned to the right -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item-img dropdown">
+                        <a class="nav-link dropdown-toggle p-0 slide-up" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img style="border-radius: 40px;" width="50px" height="50px" src="/images/background/profile.jpg" alt="Profile Picture">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown" style="background-color: rgb(205, 201, 196);">
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>        
+    <div class="container-fluid header-section" style="background: transparent;">
+        <div class="row">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6 text-center text-lg-left slide-up">
+                <h1>We are always here for all your bunny's good health</h1>
+                <p>20% Discount for your first order</p>
+                <br><br>
+                <a href="shop.html"><button class="btn btn-dark">Shop Now</button></a>
+                <a href="contact.html"><button class="btn btn-outline-light">Schedule a Call</button></a>
+            </div>
+        </div>
+    </div> 
+    <br><br><br><br><br><br>
+    </div>
+
+
+
+    <!-- Categories Section -->
+    <div class="container mb-4">
+    <h2 class="text-center mb-4 slide-up">Bunny Categories</h2>
+    <div class="d-flex justify-content-center flex-nowrap overflow-auto gap-4">
+      <!-- Category Buttons -->
+      <div class="col-auto text-center mb-3 slide-up">
+        <div class="category-btn" data-category="0" data-bs-toggle="tooltip" title="Holand lop">
+          <img src="/images/holand-lop/1.jpg" class="rounded-circle mb-2" style="width: 60px; height: 60px; object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-auto text-center mb-3 slide-up">
+        <div class="category-btn" data-category="1" data-bs-toggle="tooltip" title="American Fuzzy">
+          <img src="/images/american-fuzzy/1.jpg" class="rounded-circle mb-2" style="width: 60px; height: 60px; object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-auto text-center mb-3 slide-up">
+        <div class="category-btn" data-category="2" data-bs-toggle="tooltip" title="Angora Rabbit">
+          <img src="/images/angora-rabbit/1.jpg" class="rounded-circle mb-2" style="width: 60px; height: 60px; object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-auto text-center mb-3 slide-up">
+        <div class="category-btn" data-category="3" data-bs-toggle="tooltip" title="Lion Head">
+          <img src="/images/lion-head/1.jpg" class="rounded-circle mb-2" style="width: 60px; height: 60px; object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-auto text-center mb-3 slide-up">
+        <div class="category-btn" data-category="4" data-bs-toggle="tooltip" title="Mini Lop">
+          <img src="/images/mini-lop/1.jpg" class="rounded-circle mb-2" style="width: 60px; height: 60px; object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-auto text-center mb-3 slide-up">
+        <div class="category-btn" data-category="5" data-bs-toggle="tooltip" title="Polish Rabbit">
+          <img src="/images/polish-rabbit/1.jpg" class="rounded-circle mb-2" style="width: 60px; height: 60px; object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-auto text-center mb-3 slide-up">
+        <div class="category-btn" data-category="6" data-bs-toggle="tooltip" title="Rex Rabbit">
+          <img src="/images/rex-rabbit/1.jpg" class="rounded-circle mb-2" style="width: 60px; height: 60px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel Section -->
+  <div class="container">
+    <div id="categoryCarousel" class="carousel slide slide-up" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner" id="carouselItemsContainer">
+        <!-- Carousel items will be dynamically inserted here based on category selection -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: brightness(100%); opacity: 1;"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="filter: brightness(100%); opacity: 1;"></span>
+      </button>      
+    </div>
+  </div>
+  <!-- end category -->
+  <br><br><br><br>
+
+  <!-- services section -->
+  <div class="container mt-5">
+    <div class="row text-center">
+      <div class="col-md-6 service-section slide-up">
+          <p class="text-danger">Our Best Services</p>
+          <h2>What We’re Offering to Our Customers</h2>
+          <p class="text-light">We are committed to providing exceptional services for your pet rabbits.</p>
+        </div>
+      <div class="col-md-3">
+        <div class="service-box position-relative slide-up">
+          <div class="service-icon">🐰</div>
+          <div class="service-number">01</div>
+          <h4 class="text-light">Rabbit Grooming</h4>
+          <p class="text-light">Professional grooming services to keep your rabbit looking its best.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="service-box position-relative slide-up">
+          <div class="service-icon">🏥</div>
+          <div class="service-number">02</div>
+          <h4 class="text-light">Health Checkups</h4>
+          <p class="text-light">Routine health checkups to ensure your rabbit's well-being.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="service-box position-relative slide-up">
+          <div class="service-icon">🐾</div>
+          <div class="service-number">03</div>
+          <h4 class="text-light">Behavioral Training</h4>
+          <p class="text-light">Training sessions to help your rabbit adapt to your home.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="service-box position-relative slide-up">
+          <div class="service-icon">🍎</div>
+          <div class="service-number">04</div>
+          <h4 class="text-light">Diet Planning</h4>
+          <p class="text-light">Customized diet plans to meet your rabbit's nutritional needs.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="service-box position-relative slide-up">
+          <div class="service-icon">🏡</div>
+          <div class="service-number">05</div>
+          <h4 class="text-light">Rabbit Boarding</h4>
+          <p class="text-light">Safe and comfortable boarding facilities for your pet.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="service-box position-relative slide-up">
+          <div class="service-icon">📦</div>
+          <div class="service-number">06</div>
+          <h4 class="text-light">Supplies & Accessories</h4>
+          <p class="text-light">A wide range of rabbit supplies and accessories available.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- end services -->
+
+
+   <div class="container mt-5">
+    <h1>Discover more bunny</h1>
+    <div class="row">
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-american.html"><img src="/images/american-fuzzy/13.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱100.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-angora.html"><img src="/images/angora-rabbit/1.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱400.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-holand.html"><img src="/images/holand-lop/1.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱300.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-lion.html"><img src="/images/lion-head/1.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱400.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-mini.html"></a><img src="/images/mini-lop/1.jpg" class="img-fluid" alt="Image">
+          </div>
+          <h4 class="text-center"><b>₱200.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-polish.html"><img src="/images/polish-rabbit/1.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱300.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-rex.html"><img src="/images/rex-rabbit/1.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱100.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-american.html"><img src="/images/polish-rabbit/2.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱200.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-mini.html"><img src="/images/mini-lop/3.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱200.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-lion.html"><img src="/images/lion-head/14.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱300.00</b></h4>
+        </div> 
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-angora.html"><img src="/images/angora-rabbit/10.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>500.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-american.html"><img src="/images/american-fuzzy/13.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱300.00</b></h4>
+        </div><div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-lion.html"><img src="/images/lion-head/18.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱400.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-angora.html"><img src="/images/angora-rabbit/17.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱100.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-mini.html"><img src="/images/mini-lop/15.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱200.00</b></h4>
+        </div>
+        <div class="col-md-3 slide-up">
+          <div class="image-box">
+            <a href="view-angora.html"><img src="/images/angora-rabbit/16.jpg" class="img-fluid" alt="Image"></a>
+          </div>
+          <h4 class="text-center"><b>₱150.00</b></h4>
+        </div>
+      </div>
+    </div>
+  
+
+    <!-- footer -->
+    <footer class="footer mt-5">
+      <div style="margin-left: 100px; margin-right: 100px;">
+          <div class="row text-center text-md-start">
+              <div class="col-md-4 mb-4">
+                  <div class="logo slide-up">
+                      <img src="/images/logo/logo.png" alt="Logo" width="100" height="100" ><span class="text-light">tepen website</span>
+                  </div>
+                  <p class="slide-up text-light">bunny ecommerce website</p>
+              </div>
+              <div class="col-md-3">
+                  <h6 class="slide-up text-light">Navigation</h6>
+                  <ul class="list-unstyled slide-up">
+                      <li><a href="#" class="text-white">Home</a></li>
+                      <li><a href="#" class="text-white">shop</a></li>
+                      <li><a href="#" class="text-white">about</a></li>
+                      <li><a href="#" class="text-white">services</a></li>
+                      <li><a href="#" class="text-white">contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h6 class="text-light">Bunny breeds</h6>
+                  <ul class="list-unstyled slide-up">
+                      <li><a href="#" class="text-white">american-fuzzy</a></li>
+                      <li><a href="#" class="text-white">angora-rabbit</a></li>
+                      <li><a href="#" class="text-white">holand-lop</a></li>
+                      <li><a href="#" class="text-white">Lion-head</a></li>
+                      <li><a href="#" class="text-white">mini-lop</a></li>
+                      <li><a href="#" class="text-white">polish-rabbit</a></li>
+                      <li><a href="#" class="text-white">rex-rabbit</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-2">
+                  <h6 class="text-light">Services</h6>
+                  <ul class="list-unstyled slide-up">
+                      <li><a href="#" class="text-white">Grooming</a></li>
+                      <li><a href="#" class="text-white">Checkups</a></li>
+                      <li><a href="#" class="text-white">Training</a></li>
+                      <li><a href="#" class="text-white">Planning</a></li>
+                      <li><a href="#" class="text-white">Boarding</a></li>
+                      <li><a href="#" class="text-white">Accessories</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div>
+          <p class="text-center text-light">&copy; 2022 SM Bunny Shop • All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/tooltip.js"></script>
+    <script src="/js/category.js"></script>
+    <script src="/js/slideup.js"></script>
+</body>
+</html>

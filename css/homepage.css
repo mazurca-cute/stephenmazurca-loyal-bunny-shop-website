@@ -1,0 +1,42 @@
+.header-section {
+    background-color: #F04E23;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.about-section {
+    background-color: #e9e4de;
+}
+.pet-image {
+    max-width: 100%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+filter: brightness(100%); 
+opacity: 1;
+}
+.carousel-control-prev,
+.carousel-control-next {
+background: none; 
+outline: none; 
+border: none; 
+}
+.image-box:hover {
+opacity: 1;
+}
+
+.image-box {
+transition: opacity 0.3s ease;
+}
+
+.image-box:hover ~ .image-box {
+opacity: 0.5;
+}
+
+.row:hover .image-box {
+opacity: 0.5;
+}
+
+.row:hover .image-box:hover {
+opacity: 1;
+}

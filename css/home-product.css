@@ -1,0 +1,17 @@
+.image-box {
+    height: 250px; /* Set a fixed height for uniformity */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-box img {
+    height: 100%;
+    width: auto; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-style: double;
+  }
+
+  

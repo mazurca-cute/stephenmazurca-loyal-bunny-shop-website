@@ -1,0 +1,28 @@
+.container {
+    margin-top: 20px;
+}
+.animate-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+.animate-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.order-summary .card-body {
+    font-size: 0.9rem;
+}
+.form-check-label {
+    font-size: 0.9rem;
+}
+.order-summary img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
